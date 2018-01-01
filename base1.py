@@ -330,3 +330,31 @@ set2 = {111,222,333}
     # return f(a) + f(b)
 # result = add(3,-2,abs) # 将函数作为参数传入
 # print(result)
+
+# map 将function作用到list每一个元素中，返回一个迭代器
+# list1 = [1,2,3,4,5]
+# def function (x):
+#     return x ** 2
+# result = map(function,list1)
+# print(result)
+# """ <map object at 0x10effc160> """
+# print(list(result))
+# """ [1, 4, 9, 16, 25] """
+
+# reduce 对参数序列中的元素进行累积，参数函数必须有两个参数
+# import functools
+# def add(x,y):
+    # return x + y
+# result = functools.reduce(add,[1,2,3,4,5])
+# print(result)
+# 简化
+# from functools import reduce
+# print(reduce(lambda x, y: x + y ,[1,2,3,4,5]))
+# !TODO
+# from functools import reduce
+# str1 = 'hello'
+# print(reduce(lambda x, y: y+x,str1 ))
+
+# filter 过滤不符合条件的序列元素,返回一个filter对象 
+# print(list(filter(lambda x: x % 2 == 0, range(0,20))))
+
