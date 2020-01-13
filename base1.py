@@ -308,14 +308,25 @@ set2 = {111,222,333}
 # f6 = lambda a, b: a if a > b else b
 # print(f6(111,222))
 # 排序
-students = [
-    {'name': 'Jerome', 'age': 20},
-    {'name': 'Cloud', 'age': 30},
-    {'name': 'Robert', 'age': 15}
-]
-#按name值进行升序
-students.sort(key= lambda x: x['age'])
-print(students)
-#按name值进行降序
-students.sort(key= lambda x: x['age'], reverse=True)
-print(students)
+# students = [
+#     {'name': 'Jerome', 'age': 20},
+#     {'name': 'Cloud', 'age': 30},
+#     {'name': 'Robert', 'age': 15}
+# ]
+# #按name值进行升序
+# students.sort(key= lambda x: x['age'])
+# print(students)
+# #按name值进行降序
+# students.sort(key= lambda x: x['age'], reverse=True)
+# print(students)
+
+#高阶函数
+# def add_num(a,b):
+    # return abs(a) + abs(b)
+# result = add_num(3, -3)
+# print(result)
+#进阶
+# def add(a,b,f):
+    # return f(a) + f(b)
+# result = add(3,-2,abs) # 将函数作为参数传入
+# print(result)
